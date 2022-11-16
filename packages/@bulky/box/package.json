@@ -1,0 +1,35 @@
+{
+  "name": "@bulky/box",
+  "description": "Import files from Box, into bulky.",
+  "version": "2.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "box"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/companion-client": "workspace:^",
+    "@bulky/provider-views": "workspace:^",
+    "@bulky/utils": "workspace:^",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

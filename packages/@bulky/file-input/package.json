@@ -1,0 +1,32 @@
+{
+  "name": "@bulky/file-input",
+  "description": "Simple UI of a file input button that works with bulky right out of the box",
+  "version": "3.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "dist/style.min.css",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "file uploader",
+    "upload",
+    "bulky",
+    "bulky-plugin",
+    "file-input"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

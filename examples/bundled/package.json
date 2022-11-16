@@ -1,0 +1,22 @@
+{
+  "name": "@bulky-example/bundled",
+  "version": "0.0.0",
+  "dependencies": {
+    "@bulky/core": "workspace:*",
+    "@bulky/dashboard": "workspace:*",
+    "@bulky/google-drive": "workspace:*",
+    "@bulky/instagram": "workspace:*",
+    "@bulky/tus": "workspace:*",
+    "@bulky/url": "workspace:*",
+    "@bulky/webcam": "workspace:*"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "parcel build index.html",
+    "dev": "parcel index.html"
+  }
+}

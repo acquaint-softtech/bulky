@@ -1,0 +1,179 @@
+/**
+* General bulky styles that apply to everything inside the .bulky-Root container
+*/
+
+.bulky-Root {
+  position: relative;
+  box-sizing: border-box;
+  color: $gray-800;
+  font-family: $font-family-base;
+  line-height: 1;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// One selector uses the dir attribute declared by the page. If that does not exist, bulky adds a
+// fallback dir attribute on the root element itself, and we need a second selector to match that.
+[dir="rtl"] .bulky-Root,
+.bulky-Root[dir="rtl"] {
+  text-align: right;
+}
+
+.bulky-Root *,
+.bulky-Root *::before,
+.bulky-Root *::after {
+  box-sizing: inherit;
+}
+
+.bulky-Root [hidden] {
+  display: none;
+}
+
+// Utilities
+
+.bulky-u-reset {
+  all: initial;
+  box-sizing: border-box;
+  appearance: none;
+  font-family: $font-family-base;
+  line-height: 1;
+}
+
+[dir="rtl"] .bulky-u-reset {
+  text-align: right;
+}
+
+// Inputs
+
+.bulky-c-textInput {
+  padding: 6px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: $white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+
+  .bulky-size--md & {
+    padding: 8px 10px;
+  }
+
+  &:focus {
+    border-color: rgba($blue, 0.6);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($blue, 0.15);
+  }
+
+  [data-bulky-theme="dark"] & {
+    color: $gray-200;
+    background-color: $gray-800;
+    border-color: $gray-800;
+  }
+
+  [data-bulky-theme="dark"] &:focus {
+    border-color: $gray-700;
+    box-shadow: none;
+  }
+}
+
+// Icon
+
+// https://blog.prototypr.io/align-svg-icons-to-text-and-say-goodbye-to-font-icons-d44b3d7b26b4
+.bulky-c-icon {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  fill: currentColor;
+}
+
+// Buttons
+
+.bulky-c-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  text-align: center;
+  // vertical-align: middle;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  user-select: none;
+
+  // Override right-to-left variant of the bulky-u-reset class
+  [dir="rtl"] & {
+    text-align: center;
+  }
+}
+
+.bulky-c-btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.bulky-c-btn::-moz-focus-inner {
+  border: 0;
+}
+
+.bulky-c-btn-primary {
+  padding: 10px 18px;
+  color: $white;
+  font-size: 14px;
+  background-color: $blue;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: darken($blue, 10%);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($blue, 0.4);
+  }
+
+  .bulky-size--md & {
+    padding: 13px 22px;
+  }
+
+  [data-bulky-theme="dark"] & {
+    color: $gray-200;
+
+    @include blue-border-focus--dark;
+  }
+}
+
+.bulky-c-btn-link {
+  padding: 10px 15px;
+  color: $gray-700;
+  font-size: 14px;
+  line-height: 1;
+  background-color: transparent;
+  border-radius: 4px;
+
+  &:hover {
+    color: $gray-800;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($blue, 0.25);
+  }
+
+  .bulky-size--md & {
+    padding: 13px 18px;
+  }
+
+  [data-bulky-theme="dark"] & {
+    color: $gray-200;
+
+    @include blue-border-focus--dark;
+  }
+
+  [data-bulky-theme="dark"] &:hover {
+    color: $gray-500;
+  }
+}

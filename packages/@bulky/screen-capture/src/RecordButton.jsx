@@ -1,0 +1,57 @@
+import { h } from "preact";
+
+/**
+ * Control screen capture recording. Will show record or stop button.
+ */
+export default function RecordButton({
+  recording,
+  onStartRecording,
+  onStopRecording,
+  i18n,
+}) {
+  if (recording) {
+    return (
+      <button
+        className="bulky-u-reset bulky-c-btn bulky-ScreenCapture-button bulky-ScreenCapture-button--video bulky-ScreenCapture-button--stop-rec"
+        type="button"
+        title={i18n("stopCapturing")}
+        aria-label={i18n("stopCapturing")}
+        onClick={onStopRecording}
+        data-bulky-super-focusable
+      >
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          className="bulky-c-icon"
+          width="100"
+          height="100"
+          viewBox="0 0 100 100"
+        >
+          <rect x="15" y="15" width="70" height="70" />
+        </svg>
+      </button>
+    );
+  }
+
+  return (
+    <button
+      className="bulky-u-reset bulky-c-btn bulky-ScreenCapture-button bulky-ScreenCapture-button--video"
+      type="button"
+      title={i18n("startCapturing")}
+      aria-label={i18n("startCapturing")}
+      onClick={onStartRecording}
+      data-bulky-super-focusable
+    >
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        className="bulky-c-icon"
+        width="100"
+        height="100"
+        viewBox="0 0 100 100"
+      >
+        <circle cx="50" cy="50" r="40" />
+      </svg>
+    </button>
+  );
+}

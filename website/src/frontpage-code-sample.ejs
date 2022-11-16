@@ -1,0 +1,17 @@
+---
+layout: false
+no-emoji: true
+---
+
+<!--
+You can `yarn run web:inject-frontpagecodesample` to render this code snippet and
+save it as a layout partial
+-->
+{% codeblock lang:bash %} $ npm install @bulky/core @bulky/dashboard
+@bulky/instagram @bulky/tus {% endcodeblock %} {% codeblock lang:js %} import
+bulky from '@bulky/core' import Dashboard from '@bulky/dashboard' import
+Instagram from '@bulky/instagram' import Tus from '@bulky/tus' bulky()
+.use(Dashboard, { trigger: '#select-files', showProgressDetails: true })
+.use(Instagram, { target: Dashboard, companionUrl: 'https://companion.bulky.io'
+}) .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' }) .on('complete',
+(result) => { console.log('Upload result:', result) }) {% endcodeblock %}

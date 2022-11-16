@@ -1,0 +1,27 @@
+{
+  "name": "@bulky-example/react",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@bulky/core": "workspace:*",
+    "@bulky/dashboard": "workspace:*",
+    "@bulky/drag-drop": "workspace:*",
+    "@bulky/file-input": "workspace:*",
+    "@bulky/google-drive": "workspace:*",
+    "@bulky/progress-bar": "workspace:*",
+    "@bulky/react": "workspace:*",
+    "@bulky/tus": "workspace:*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.0.0",
+    "vite": "^3.0.0"
+  }
+}

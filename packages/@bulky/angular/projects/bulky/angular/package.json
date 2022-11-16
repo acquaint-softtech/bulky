@@ -1,0 +1,37 @@
+{
+  "name": "@bulky/angular",
+  "description": "Angular component wrappers around bulky's official UI plugins.",
+  "version": "0.5.0",
+  "license": "MIT",
+  "homepage": "https://bulky.io",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "angular",
+    "angular-components"
+  ],
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "scripts": {
+    "prepublishOnly": "rm -fr * && cp -r ../../dist/angular .."
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "peerDependencies": {
+    "@angular/common": ">= 14",
+    "@angular/core": ">= 14",
+    "@bulky/core": "workspace:^",
+    "@bulky/dashboard": "workspace:^",
+    "@bulky/drag-drop": "workspace:^",
+    "@bulky/progress-bar": "workspace:^",
+    "@bulky/status-bar": "workspace:^",
+    "@bulky/utils": "workspace:^"
+  }
+}

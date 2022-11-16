@@ -1,0 +1,114 @@
+.bulky-Dashboard-Item-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: $zIndex-3;
+  width: 120px;
+  color: $white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  transition: all 0.35 ease;
+}
+
+.bulky-Dashboard-Item-progressIndicator {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  opacity: 0.9;
+  color: $white;
+
+  .bulky-size--md & {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+button.bulky-Dashboard-Item-progressIndicator {
+  @include clear-focus;
+
+  cursor: pointer;
+
+  &:focus {
+    .bulky-Dashboard-Item-progressIcon--bg,
+    .bulky-Dashboard-Item-progressIcon--retry {
+      fill: lighten($blue, 20%);
+    }
+  }
+}
+
+// ProgressCircle svg styles
+
+.bulky-Dashboard-Item-progressIcon--circle {
+  width: 100%;
+  height: 100%;
+}
+
+.bulky-Dashboard-Item-progressIcon--bg {
+  stroke: rgba($white, 0.4);
+}
+
+.bulky-Dashboard-Item-progressIcon--progress {
+  transition: stroke-dashoffset 0.5s ease-out;
+  stroke: $white;
+}
+
+.bulky-Dashboard-Item-progressIcon--play {
+  transition: all 0.2s;
+  fill: $white;
+  stroke: $white;
+}
+
+.bulky-Dashboard-Item-progressIcon--cancel {
+  transition: all 0.2s;
+  fill: $white;
+}
+
+.bulky-Dashboard-Item-progressIcon--pause {
+  transition: all 0.2s;
+  fill: $white;
+  stroke: $white;
+}
+
+.bulky-Dashboard-Item-progressIcon--check {
+  transition: all 0.2s;
+  fill: $white;
+}
+
+.bulky-Dashboard-Item-progressIcon--retry {
+  fill: $white;
+}
+
+// Svg styles that depend on the state of the file.
+
+.bulky-Dashboard-Item.is-complete .bulky-Dashboard-Item-progress {
+  top: -9px;
+  width: auto;
+  transform: initial;
+  inset-inline-end: -8px;
+  inset-inline-start: initial;
+}
+
+.bulky-Dashboard-Item.is-error .bulky-Dashboard-Item-progressIndicator {
+  width: 18px;
+  height: 18px;
+
+  .bulky-size--md & {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+.bulky-Dashboard-Item.is-complete .bulky-Dashboard-Item-progressIndicator {
+  width: 18px;
+  height: 18px;
+  opacity: 1;
+
+  .bulky-size--md & {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.bulky-Dashboard-Item.is-processing .bulky-Dashboard-Item-progress {
+  opacity: 0;
+}

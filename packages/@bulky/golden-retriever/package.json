@@ -1,0 +1,34 @@
+{
+  "name": "@bulky/golden-retriever",
+  "description": "The GoldenRetriever bulky plugin saves selected files in browser cache to seamlessly resume uploding after browser crash or accidentally closed tab",
+  "version": "3.0.2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "restore files",
+    "crash recovery",
+    "golden retriever",
+    "resumable uploads",
+    "bulky",
+    "bulky-plugin"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@transloadit/prettier-bytes": "0.0.9",
+    "@bulky/utils": "workspace:^",
+    "lodash.throttle": "^4.1.1"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

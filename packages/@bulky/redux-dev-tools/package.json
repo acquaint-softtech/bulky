@@ -1,0 +1,27 @@
+{
+  "name": "@bulky/redux-dev-tools",
+  "description": "Redux developer tools plugin for bulky that simply syncs bulky’s state with redux-devtools browser or JS extensions, and allows for basic time travel",
+  "version": "3.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "redux",
+    "redux-dev-tools",
+    "bulky",
+    "bulky-plugin"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@bulky-example/transloadit-markdown-bin",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "@bulky/core": "workspace:*",
+    "@bulky/dashboard": "workspace:*",
+    "@bulky/drop-target": "workspace:*",
+    "@bulky/image-editor": "workspace:*",
+    "@bulky/remote-sources": "workspace:*",
+    "@bulky/transloadit": "workspace:*",
+    "@bulky/webcam": "workspace:*",
+    "marked": "^4.0.18"
+  },
+  "devDependencies": {
+    "vite": "^3.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "vite"
+  }
+}

@@ -1,0 +1,31 @@
+.bulky-SearchProvider {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  [data-bulky-theme="dark"] & {
+    background-color: $gray-900;
+  }
+}
+
+.bulky-SearchProvider-input {
+  width: 90%;
+  max-width: 650px;
+  margin-bottom: 15px;
+
+  .bulky-size--md & {
+    margin-bottom: 20px;
+  }
+}
+
+.bulky-SearchProvider-searchButton {
+  padding: 13px 25px;
+
+  .bulky-size--md & {
+    padding: 13px 30px;
+  }
+}

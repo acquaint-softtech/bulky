@@ -1,0 +1,48 @@
+{
+  "name": "@bulky/dashboard",
+  "description": "Universal UI plugin for bulky.",
+  "version": "3.2.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "dist/style.min.css",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "dashboard",
+    "ui"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@transloadit/prettier-bytes": "0.0.7",
+    "@bulky/informer": "workspace:^",
+    "@bulky/provider-views": "workspace:^",
+    "@bulky/status-bar": "workspace:^",
+    "@bulky/thumbnail-generator": "workspace:^",
+    "@bulky/utils": "workspace:^",
+    "classnames": "^2.2.6",
+    "is-shallow-equal": "^1.0.1",
+    "lodash.debounce": "^4.0.8",
+    "memoize-one": "^6.0.0",
+    "nanoid": "^4.0.0",
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "@bulky/google-drive": "workspace:^",
+    "@bulky/status-bar": "workspace:^",
+    "resize-observer-polyfill": "^1.5.0"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

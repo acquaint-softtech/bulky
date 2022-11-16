@@ -1,0 +1,40 @@
+{
+  "name": "@bulky/webcam",
+  "description": "bulky plugin that takes photos or records videos using the device's camera.",
+  "version": "3.2.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "dist/style.min.css",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "webcam",
+    "picture",
+    "photo",
+    "video",
+    "record",
+    "mediarecorder"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "is-mobile": "^3.1.1",
+    "preact": "^10.5.13"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

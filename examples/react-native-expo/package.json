@@ -1,0 +1,27 @@
+{
+  "name": "@bulky-example/react-native-expo",
+  "version": "0.0.0",
+  "dependencies": {
+    "@bulky/core": "workspace:*",
+    "@bulky/dashboard": "workspace:*",
+    "@bulky/instagram": "workspace:*",
+    "@bulky/react-native": "workspace:*",
+    "@bulky/tus": "workspace:*",
+    "@bulky/url": "workspace:*",
+    "@bulky/xhr-upload": "workspace:*",
+    "babel-preset-expo": "^5.0.0",
+    "base64-js": "^1.3.0",
+    "expo": "^42.0.0",
+    "preact-render-to-string": "^5.1.0",
+    "react": "^16.8.6",
+    "react-native": "~0.63.4"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "private": true,
+  "scripts": {
+    "android": "expo start --android",
+    "eject": "expo eject",
+    "ios": "expo start --ios",
+    "start": "expo start"
+  }
+}

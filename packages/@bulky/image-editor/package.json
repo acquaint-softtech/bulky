@@ -1,0 +1,40 @@
+{
+  "name": "@bulky/image-editor",
+  "description": "Image editor and cropping UI",
+  "version": "2.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "dist/style.min.css",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "upload",
+    "bulky",
+    "bulky-plugin",
+    "image editor",
+    "cropper",
+    "crop",
+    "rotate",
+    "resize"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "cropperjs": "1.5.7",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

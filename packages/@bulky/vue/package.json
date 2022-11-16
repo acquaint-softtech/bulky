@@ -1,0 +1,42 @@
+{
+  "name": "@bulky/vue",
+  "version": "1.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "shallow-equal": "^1.2.1"
+  },
+  "devDependencies": {
+    "vue": "^2.6.14"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^",
+    "@bulky/dashboard": "workspace:^",
+    "@bulky/drag-drop": "workspace:^",
+    "@bulky/file-input": "workspace:^",
+    "@bulky/progress-bar": "workspace:^",
+    "@bulky/status-bar": "workspace:^",
+    "vue": ">=2.6.11"
+  },
+  "peerDependenciesMeta": {
+    "@bulky/dashboard": {
+      "optional": true
+    },
+    "@bulky/drag-drop": {
+      "optional": true
+    },
+    "@bulky/file-input": {
+      "optional": true
+    },
+    "@bulky/progress-bar": {
+      "optional": true
+    },
+    "@bulky/status-bar": {
+      "optional": true
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

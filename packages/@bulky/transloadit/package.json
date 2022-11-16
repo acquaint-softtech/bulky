@@ -1,0 +1,45 @@
+{
+  "name": "@bulky/transloadit",
+  "description": "The Transloadit plugin can be used to upload files to Transloadit for all kinds of processing, such as transcoding video, resizing images, zipping/unzipping, and more",
+  "version": "3.0.2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "transloadit",
+    "file encoding",
+    "encoding",
+    "file processing",
+    "video encoding",
+    "crop",
+    "resize",
+    "watermark",
+    "bulky",
+    "bulky-plugin"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/companion-client": "workspace:^",
+    "@bulky/provider-views": "workspace:^",
+    "@bulky/tus": "workspace:^",
+    "@bulky/utils": "workspace:^",
+    "component-emitter": "^1.2.1",
+    "socket.io-client": "^4.1.3"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "whatwg-fetch": "^3.6.2"
+  }
+}

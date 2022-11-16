@@ -1,0 +1,51 @@
+{
+  "name": "@bulky/svelte",
+  "description": "bulky plugin that helps integrate bulky into your Svelte project.",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "version": "3.0.1",
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "yarn run build",
+    "validate": "svelte-check"
+  },
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "rollup": "^2.60.2",
+    "rollup-plugin-svelte": "^7.0.0",
+    "svelte": "^3.31.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.6.1"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^",
+    "@bulky/dashboard": "workspace:^",
+    "@bulky/drag-drop": "workspace:^",
+    "@bulky/progress-bar": "workspace:^",
+    "@bulky/status-bar": "workspace:^",
+    "svelte": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ]
+}

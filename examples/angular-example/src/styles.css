@@ -1,0 +1,5 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@bulky/core/dist/style.css";
+@import "@bulky/dashboard/dist/style.css";
+@import "@bulky/drag-drop/dist/style.css";
+@import "@bulky/progress-bar/dist/style.css";

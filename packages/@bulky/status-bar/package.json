@@ -1,0 +1,39 @@
+{
+  "name": "@bulky/status-bar",
+  "description": "A progress bar for bulky, with many bells and whistles.",
+  "version": "3.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "style": "dist/style.min.css",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "progress bar",
+    "status bar",
+    "progress",
+    "upload",
+    "eta",
+    "speed"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@transloadit/prettier-bytes": "0.0.9",
+    "@bulky/utils": "workspace:^",
+    "classnames": "^2.2.6",
+    "lodash.throttle": "^4.1.1",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

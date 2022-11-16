@@ -1,0 +1,36 @@
+{
+  "name": "@bulky/thumbnail-generator",
+  "description": "bulky plugin that generates small previews of images to show on your upload UI.",
+  "version": "3.0.2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "thumbnail",
+    "preview",
+    "resize"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "exifr": "^7.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "namespace-emitter": "2.0.1"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

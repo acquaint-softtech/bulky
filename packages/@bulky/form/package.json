@@ -1,0 +1,30 @@
+{
+  "name": "@bulky/form",
+  "description": "Connect bulky to an existing HTML <form>.",
+  "version": "3.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "type": "module",
+  "types": "types/index.d.ts",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "form"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "get-form-data": "^3.0.0"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

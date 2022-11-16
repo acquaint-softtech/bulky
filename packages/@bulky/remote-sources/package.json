@@ -1,0 +1,51 @@
+{
+  "name": "@bulky/remote-sources",
+  "description": "bulky plugin that includes all remote sources that bulky+Companion offer, like Instagram, Google Drive, Dropox, Box, Unsplash, Url etc",
+  "version": "1.0.2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "instagram",
+    "google-drive",
+    "facebook",
+    "dropbox",
+    "onedrive",
+    "zoom",
+    "unsplash",
+    "box",
+    "url"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/box": "workspace:^",
+    "@bulky/dashboard": "workspace:^",
+    "@bulky/dropbox": "workspace:^",
+    "@bulky/facebook": "workspace:^",
+    "@bulky/google-drive": "workspace:^",
+    "@bulky/instagram": "workspace:^",
+    "@bulky/onedrive": "workspace:^",
+    "@bulky/unsplash": "workspace:^",
+    "@bulky/url": "workspace:^",
+    "@bulky/zoom": "workspace:^"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "resize-observer-polyfill": "^1.5.1"
+  }
+}

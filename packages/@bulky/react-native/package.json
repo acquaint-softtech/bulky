@@ -1,0 +1,36 @@
+{
+  "name": "@bulky/react-native",
+  "description": "React Native bulky UI components",
+  "version": "0.4.0",
+  "main": "file-picker/index.js",
+  "license": "MIT",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "react",
+    "react-components",
+    "react-native"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/instagram": "workspace:^",
+    "@bulky/url": "workspace:^"
+  },
+  "peerDependencies": {
+    "expo": ">=33.0.0",
+    "expo-document-picker": ">=6.0.0",
+    "expo-image-picker": ">=6.0.0",
+    "expo-permissions": ">=6.0.0",
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-native": "*",
+    "react-native-super-grid": "*"
+  }
+}

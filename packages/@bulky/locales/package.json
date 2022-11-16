@@ -1,0 +1,20 @@
+{
+  "name": "@bulky/locales",
+  "description": "bulky language packs",
+  "version": "3.0.4",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "bulky",
+    "bulky-plugin",
+    "language packs"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  }
+}

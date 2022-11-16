@@ -1,0 +1,39 @@
+{
+  "name": "@bulky/xhr-upload",
+  "description": "Plain and simple classic HTML multipart form uploads with bulky, as well as uploads using the HTTP PUT method.",
+  "version": "3.0.4",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "xhr",
+    "xhr upload",
+    "XMLHttpRequest",
+    "ajax",
+    "fetch",
+    "bulky",
+    "bulky-plugin"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/companion-client": "workspace:^",
+    "@bulky/utils": "workspace:^",
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "nock": "^13.1.0"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

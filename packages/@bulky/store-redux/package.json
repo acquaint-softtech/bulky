@@ -1,0 +1,30 @@
+{
+  "name": "@bulky/store-redux",
+  "description": "Make bulky use your existing Redux store.",
+  "version": "3.0.2",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "redux"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "nanoid": "^4.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "redux": "^4.0.0"
+  }
+}

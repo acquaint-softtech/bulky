@@ -1,0 +1,28 @@
+{
+  "name": "@bulky-example/transloadit",
+  "version": "0.0.0",
+  "type": "module",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "@bulky/core": "workspace:*",
+    "@bulky/dashboard": "workspace:*",
+    "@bulky/drop-target": "workspace:*",
+    "@bulky/form": "workspace:*",
+    "@bulky/image-editor": "workspace:*",
+    "@bulky/progress-bar": "workspace:*",
+    "@bulky/remote-sources": "workspace:*",
+    "@bulky/transloadit": "workspace:*",
+    "@bulky/webcam": "workspace:*",
+    "express": "^4.16.4",
+    "he": "^1.2.0"
+  },
+  "private": true,
+  "scripts": {
+    "start:server": "node server.js",
+    "start:client": "vite",
+    "start": "npm-run-all --parallel start:server start:client"
+  }
+}

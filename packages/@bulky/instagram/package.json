@@ -1,0 +1,35 @@
+{
+  "name": "@bulky/instagram",
+  "description": "Import photos and videos from Instagram, into bulky.",
+  "version": "3.0.1",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "instagram",
+    "provider",
+    "photos",
+    "videos"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/companion-client": "workspace:^",
+    "@bulky/provider-views": "workspace:^",
+    "@bulky/utils": "workspace:^",
+    "preact": "^10.5.13"
+  },
+  "peerDependencies": {
+    "@bulky/core": "workspace:^"
+  }
+}

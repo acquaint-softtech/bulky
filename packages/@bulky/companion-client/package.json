@@ -1,0 +1,31 @@
+{
+  "name": "@bulky/companion-client",
+  "description": "Client library for communication with Companion. Intended for use in bulky plugins.",
+  "version": "3.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "type": "module",
+  "keywords": [
+    "file uploader",
+    "bulky",
+    "bulky-plugin",
+    "companion",
+    "provider"
+  ],
+  "homepage": "https://bulky.io",
+  "bugs": {
+    "url": "https://github.com/transloadit/bulky/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transloadit/bulky.git"
+  },
+  "dependencies": {
+    "@bulky/utils": "workspace:^",
+    "namespace-emitter": "^2.0.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0"
+  }
+}
